@@ -14,4 +14,20 @@ public class first : MonoBehaviour
     public string item = "生命藥水";    //字串(預設" ")
     public bool mission = true;         //布林值(一件事的判定 true or false ) (預設 false)
 
+    //屬性
+    //語法:
+    //[標題(header)   (標題內容("字串"))]
+    [Header("力量")]
+    public int STR = 1;
+    [Header("敏捷")]
+    public int VIT = 1;
+
+    //[提示("提示內容")]
+    [Header(("死亡"))]
+    [Tooltip("用來紀錄玩家是否死亡，打勾:死亡，取消:沒死")]
+    public bool dead;
+
+    //[範圍(最小值,最大值)
+    [Header("魔力"), Range(0, 999)]
+    public int MP = 10;
 }
