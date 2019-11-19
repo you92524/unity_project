@@ -10,9 +10,25 @@ public class littlechicken : MonoBehaviour
     public bool surive = true; //生存狀態 預設 活著
 
     /// <summary>
-    /// 小雞跳躍
+    /// 小雞跳躍功能
     /// </summary>
-    private void jump()
+    private void Jump()
+    {
+
+    }
+
+    /// <summary>
+    /// 小雞存活功能
+    /// </summary>
+    private void Dead()
+    {
+
+    }
+
+    /// <summary>
+    /// 小雞通過水管
+    /// </summary>
+    private void PassPipe()
     {
 
     }
