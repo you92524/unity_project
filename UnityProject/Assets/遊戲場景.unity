@@ -888,6 +888,7 @@ GameObject:
   - component: {fileID: 809338432}
   - component: {fileID: 809338433}
   - component: {fileID: 809338434}
+  - component: {fileID: 809338435}
   m_Layer: 0
   m_Name: "GameObject(\u7DF4\u7FD2\u7A0B\u5F0F)"
   m_TagString: Untagged
@@ -960,9 +961,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809338429}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3227e412df83f146a9086f6569df87c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item1: {fileID: 1765286053}
+  item2: {fileID: 1765286053}
+  cg1: {fileID: 1765286052}
+--- !u!114 &809338435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809338429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82da3c2ddcfe8248bf81104d7ecbd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1219492914
@@ -1258,6 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floorspeed: 10
+  fm: {fileID: 1540829297}
 --- !u!61 &1540829299
 BoxCollider2D:
   m_ObjectHideFlags: 0
