@@ -845,7 +845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &723678047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,6 +889,7 @@ GameObject:
   - component: {fileID: 809338433}
   - component: {fileID: 809338434}
   - component: {fileID: 809338435}
+  - component: {fileID: 809338436}
   m_Layer: 0
   m_Name: "GameObject(\u7DF4\u7FD2\u7A0B\u5F0F)"
   m_TagString: Untagged
@@ -976,11 +977,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809338429}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f82da3c2ddcfe8248bf81104d7ecbd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &809338436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809338429}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87c1089c0fb5404fa717e017a6db623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: 0
+  score: 0
+  combo: 0
 --- !u!1 &1219492914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumphihnt: 5
   surive: 1
+  goscore: {fileID: 1898973968}
+  goGM: {fileID: 723678046}
 --- !u!50 &1765286055
 Rigidbody2D:
   serializedVersion: 4
@@ -1539,7 +1557,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 999
+  m_Text: 0
 --- !u!222 &1898973972
 CanvasRenderer:
   m_ObjectHideFlags: 0

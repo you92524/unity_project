@@ -31,5 +31,37 @@ public class LearnOperator : MonoBehaviour
         print(c <= d);     // false
         print(c == d);     // false
         print(c != d);     // true
+
+        //邏輯運算子
+        //結果是布林值
+        // 並聯(and)  &&
+        //規則:只要有一個 false 就會傳回 false
+
+        print(true && true  );      //true
+        print(true && false );      //false
+        print(false && true );      //false
+        print(false && false);      //false
+
+
+        //邏輯運算子
+        //結果是布林值
+        // 串聯(or)  ||
+        //規則:只要有一個 true 就會傳回 true
+
+        print(true  || true);       //true
+        print(true  || false);      //true
+        print(false || true);       //true
+        print(false || false);      //false
+
+        //邏輯運算子
+        //結果是布林值
+        // 相反(not)  !
+        //規則:將布林值變相反
+
+        print(!false);  //true
+        print(!true);   //false
+
+
+
     }
 }
