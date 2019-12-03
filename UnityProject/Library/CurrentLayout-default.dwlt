@@ -95,7 +95,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 444}
   m_MaxSize: {x: 22006, y: 10022}
   vertical: 0
-  controlID: 93
+  controlID: 74
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,8 +240,8 @@ MonoBehaviour:
     y: 0
     width: 625
     height: 490
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -266,8 +266,8 @@ MonoBehaviour:
     y: 490
     width: 625
     height: 458
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -328,9 +328,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f8300000
-      m_LastClickedID: 12536
-      m_ExpandedIDs: 52fbfffff8300000
+      m_SelectedIDs: 4c300000
+      m_LastClickedID: 12364
+      m_ExpandedIDs: 6afbffff7c300000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -431,20 +431,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - "Assets/\u7A0B\u5F0F"
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - "Assets/\u7A0B\u5F0F"
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\appedu\Documents\GitHub\unity_project\UnityProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 582e0000
-    m_LastClickedID: 11864
-    m_ExpandedIDs: 000000003e2d00003e3100004031000000ca9a3b
+    m_SelectedIDs: ae2c0000
+    m_LastClickedID: 11438
+    m_ExpandedIDs: 00000000ae2c0000c6300000c830000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -472,7 +472,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003e2d00003e31000040310000
+    m_ExpandedIDs: 00000000ae2c0000c6300000c8300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,9 +645,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.038048, y: 2.8847828, z: -337.53842}
+    m_Target: {x: 4.7790728, y: 3.300777, z: -2.2654314}
     speed: 2
-    m_Value: {x: -3.038048, y: 2.8847828, z: -337.53842}
+    m_Value: {x: 4.7790728, y: 3.300777, z: -2.2654314}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -680,9 +680,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.664511
+    m_Target: 24.383183
     speed: 2
-    m_Value: 14.664511
+    m_Value: 24.383183
   m_Ortho:
     m_Target: 1
     speed: 2

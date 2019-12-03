@@ -8,6 +8,8 @@ public class gamemanager : MonoBehaviour
     public int best = 0;   //最高分數
     [Header("水管")]
     public GameObject pipe;// GameObject :可以存放預製物
+    [Header("介面群組")]
+    public GameObject gmUI;
 
     /// <summary>
     /// 水管生成功能
@@ -51,7 +53,7 @@ public class gamemanager : MonoBehaviour
     /// </summary>
     public void GameOver()
     {
-
+        gmUI.SetActive(true);
     }
 
     private void Start()

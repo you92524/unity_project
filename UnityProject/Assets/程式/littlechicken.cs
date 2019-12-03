@@ -14,11 +14,18 @@ public class littlechicken : MonoBehaviour
     [Header("剛體")]
     public Rigidbody2D r2d;
 
+    [Header("遊戲管理器")]
+    public gamemanager gm;
+
     /// <summary>
     /// 小雞跳躍功能
     /// </summary>
     private void Jump()
     {
+        if (!surive)
+        {
+            return;         //跳出此方法
+        }
         //如果 按下 左鍵
         if (Input.GetKeyDown(KeyCode.Mouse0 ))
         {
@@ -46,7 +53,8 @@ public class littlechicken : MonoBehaviour
     /// </summary>
     private void Dead()
     {
-
+        surive = false;
+        gm.GameOver();
     }
 
     /// <summary>
@@ -62,4 +70,18 @@ public class littlechicken : MonoBehaviour
     {
         Jump();   
     }
+
+    //碰撞事件:碰到其他碰撞器開始執行一次(碰到物件的碰撞資訊)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print(collision.gameObject.name);
+        Dead();
+    }
+
+    //觸發事件:觸發其他碰撞器開始執行一次(針對勾選 IsTrigger 的物件)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Dead();
+    }
+
 }

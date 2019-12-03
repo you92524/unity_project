@@ -861,6 +861,7 @@ MonoBehaviour:
   now: 0
   best: 0
   pipe: {fileID: 7835497678580630164, guid: 3e026afc4f915c14db7c437e26b81bbf, type: 3}
+  gmUI: {fileID: 2102171413}
 --- !u!4 &723678048
 Transform:
   m_ObjectHideFlags: 0
@@ -1437,6 +1438,7 @@ MonoBehaviour:
   goscore: {fileID: 1898973968}
   goGM: {fileID: 723678046}
   r2d: {fileID: 1765286055}
+  gm: {fileID: 723678047}
 --- !u!50 &1765286055
 Rigidbody2D:
   serializedVersion: 4
