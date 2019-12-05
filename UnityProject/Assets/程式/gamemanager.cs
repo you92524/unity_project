@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using UnityEngine.UI;   //引用 介面 API
+using UnityEngine;
+
+
 
 public class gamemanager : MonoBehaviour
 {
@@ -10,6 +13,12 @@ public class gamemanager : MonoBehaviour
     public GameObject pipe;// GameObject :可以存放預製物
     [Header("介面群組")]
     public GameObject gmUI;
+    [Header("分數群組")]
+    public Text txt;
+    [Header("最高分數群組")]
+    public Text txtbest;
+
+    public int add;
 
     /// <summary>
     /// 水管生成功能
@@ -35,9 +44,13 @@ public class gamemanager : MonoBehaviour
     /// 加分功能
     /// </summary>
     /// <param name="now">要添加的分數</param>
-    public void AddScore(int now)
+    public void AddScore(int add)
     {
+        now = now+add;
+        //txt.text = now + "";     //另一種轉字串的方法
+        txt.text = now.ToString(); //整數.轉字串()
 
+        SetHeightScore();
     }
 
     /// <summary>
@@ -45,7 +58,17 @@ public class gamemanager : MonoBehaviour
     /// </summary>
     private void SetHeightScore()
     {
-
+        //取得 最高分數 於 裝置
+        best = PlayerPrefs.GetInt("最佳得分");
+        
+        // 如果  目前分數 > 最高分數
+        if (now > best)
+        {
+            //最高分數 = 目前分數
+            best = now;
+            PlayerPrefs.SetInt("最佳得分",best);
+        }
+        txtbest.text = best.ToString();
     }
 
     /// <summary>
@@ -54,12 +77,18 @@ public class gamemanager : MonoBehaviour
     public void GameOver()
     {
         gmUI.SetActive(true);
+        floor.floorspeed = 0;
     }
 
     private void Start()
     {
 
         //SpawnPipe();
-        InvokeRepeating("SpawnPipe", 0, 2f);
+        InvokeRepeating("SpawnPipe", 1f, 2f);
+
+        //取得 最高分數 於 裝置
+        best = PlayerPrefs.GetInt("最佳得分");  //更新最高分數的介面
+        txtbest.text = best.ToString();
+        
     }
 }

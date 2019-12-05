@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class floor : MonoBehaviour
 {
-    [Header("地板速度"), Range(1, 100), Tooltip("控制地板的移動速度")]
-    public float floorspeed = 10f;//地板速度
+    //static    靜態  隱藏
+    //  此類別共用  包含子類別
+    //[Header("地板速度"), Range(1, 100), Tooltip("控制地板的移動速度")]
+    public static float floorspeed = 10f;//地板速度
 
     [Header("變形"), Tooltip("需要移動的項目")]
     public Transform fm;
