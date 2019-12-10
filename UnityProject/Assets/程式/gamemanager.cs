@@ -1,4 +1,5 @@
-﻿using UnityEngine.UI;   //引用 介面 API
+﻿using UnityEngine.SceneManagement;  //引用 場景管理 API
+using UnityEngine.UI;   //引用 介面 API
 using UnityEngine;
 
 
@@ -80,6 +81,29 @@ public class gamemanager : MonoBehaviour
         floor.floorspeed = 0;
     }
 
+    /// <summary>
+    /// 重新遊戲
+    /// </summary>
+    public void Replay()
+    {
+
+
+        //  Application.LoadLevel("遊戲場景");      
+        //應用程式.載入關卡("關卡名稱") 舊版 API
+
+        SceneManager.LoadScene("遊戲場景");         
+        //應用程式.載入場景("場景名稱") 新版 API
+
+    }
+    
+    /// <summary>
+    /// 離開遊戲
+    /// </summary>
+    public void Exit()
+    {
+        Application.Quit();     //應用程式.離開遊戲
+    }
+
     private void Start()
     {
 
@@ -89,6 +113,8 @@ public class gamemanager : MonoBehaviour
         //取得 最高分數 於 裝置
         best = PlayerPrefs.GetInt("最佳得分");  //更新最高分數的介面
         txtbest.text = best.ToString();
+
+        floor.floorspeed = 10f;
         
     }
 }

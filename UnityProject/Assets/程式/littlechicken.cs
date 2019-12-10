@@ -86,6 +86,12 @@ public class littlechicken : MonoBehaviour
         aud.PlayOneShot(sondaddpoint, 1f);
     }
 
+    private void Start()
+    {
+        // 螢幕.設定解析度(寬,高,是否解析度)
+        Screen.SetResolution(720, 1280, false);
+    }
+
     //監聽玩家輸入:鍵盤、滑鼠、搖桿
     private void Update()
     {
